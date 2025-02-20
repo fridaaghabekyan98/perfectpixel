@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Perfect UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white-900 flex justify-center items-center min-h-screen">
+
+<div class="container">
+    <div class="relative border border-[#15171B] rounded-[16px] p-[16px_16px_24px_16px] bg-[#1a1a22] gap-[16px] flex flex-col text-white shadow-[0px_5px_40px_0px_#00000029] overflow-hidden mx-auto">
+        <!-- Gradient Background (Top) -->
+        <div class="absolute top-0 left-0 w-full h-[55.11%] rounded-t-[16px] bg-[#24FFBC] z-0">
+        </div>
+        <div class="absolute top-0 left-0 w-full h-[55.11%] rounded-t-[16px] bg-gradient-to-br from-[#0B0B0F] to-[rgba(26,26,34,0.9)] z-0">
+        </div>
+        <!-- Gradient Background (Bottom) -->
+        <div class="absolute bottom-0 left-0 w-full h-[44.89%] rounded-t-[16px]
+              bg-gradient-to-br from-[#211A1A] to-[#212127] z-0">
+        </div>
+
+        <!-- Card Content -->
+        <div class="relative z-[1]">
+            <div class="relative z-[1] px-[20px] pt-[20px] pb-0 flex justify-between">
+                <h1 class="font-nohemi font-semibold text-[32px] leading-[32.14px] text-[#24FFBC]">
+                    Eiger<span class="font-mattone font-semibold text-[32px] leading-[38.4px] text-[#F5F5F5]">X</span>
+                </h1>
+                <div class="flex -space-x-2">
+                    <img src="assets/images/Ellipse%204.svg" class="w-10 h-10 rounded-full z-2" alt="User 1">
+                    <img src="assets/images/Ellipse%205.svg" class="w-10 h-10 rounded-full z-1" alt="User 2">
+                    <img src="assets/images/Ellipse%206.svg"
+                         class="w-10 h-10 rounded-full border-[2px] border-[#0B0B0F]"
+                         alt="User 3">
+                </div>
+            </div>
+            <div class="relative z-[1] px-[20px] pt-[20px] pb-0 mt-[100px] font-sfpro font-bold text-[32px] leading-[38px] tracking-[0]">
+                <h2 class=" opacity-70">Hello there</h2>
+                <h3>How can we help?</h3>
+            </div>
+        </div>
+        <div class="flex flex-col gap-[12px] z-[1]">
+
+            <button class="w-full pt-[15px] pb-[15px] pl-[15px] pr-[15px] bg-[#1B1E22]
+            border border-[#24FFBC] rounded-[10px]
+            shadow-[0px_0px_0px_1px_#00000014,0px_2px_8px_0px_#0000000F]
+            flex justify-between">
+                <span class="flex flex-col items-start">
+                    <span class="font-inter font-semibold text-[14px] leading-[21px] tracking-[0] text-[#F5F5F5]">Send us a message</span>
+                    <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0] text-[#83838D]">We typically reply within a day</span>
+                </span>
+                <img src="assets/images/Frame.svg" alt="">
+            </button>
+
+            <div class="w-full rounded-[10px] p-[8px] gap-[8px] bg-[#0B0B0F]
+            shadow-[0px_0px_0px_1px_#00000014,0px_2px_8px_0px_#0000000F] flex flex-col gap-[8px]">
+
+                <div class="relative w-full">
+                    <!-- Search Icon -->
+                    <svg class="absolute right-4 top-1/2 transform -translate-y-1/2"
+                         width="16" height="17" viewBox="0 0 16 17" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 12.625C10.0543 12.625 12.125 10.5543 12.125 8C12.125 5.44568 10.0543 3.375 7.5 3.375C4.94568 3.375 2.875 5.44568 2.875 8C2.875 10.5543 4.94568 12.625 7.5 12.625Z"
+                              stroke="#24FFBC" stroke-width="1.75"/>
+                        <path d="M13.3813 15.1187C13.723 15.4604 14.277 15.4604 14.6187 15.1187C14.9604 14.777 14.9604 14.223 14.6187 13.8813L13.3813 15.1187ZM10.3813 12.1187L13.3813 15.1187L14.6187 13.8813L11.6187 10.8813L10.3813 12.1187Z"
+                              fill="#24FFBC"/>
+                    </svg>
+
+                    <!-- Input Field -->
+                    <input type="text" placeholder="Search for help"
+                           class="bg-[#1B1E22] rounded-[8px] w-full pr-12 pl-4 py-[10px] text-[14px] leading-[21px]
+                placeholder:font-inter placeholder:font-semibold
+                placeholder:text-[14px] placeholder:leading-[21px]
+                placeholder:tracking-[0] placeholder:text-[#F5F5F5]
+                text-white focus:outline-none">
+                </div>
+                <div class="mt-[0]">
+                    <div class="rounded-[8px] flex justify-between pt-[10px] pr-[12px] pb-[10px] pl-[12px]">
+                        <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0]">In-game bonuses and free spins </span>
+                        <img src="assets/images/Frame%20(1).svg" alt="">
+                    </div>
+                    <div class="rounded-[8px] flex justify-between pt-[10px] pr-[12px] pb-[10px] pl-[12px]">
+                        <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0]">Crypto deposit still not credited?</span>
+                        <img src="assets/images/Frame%20(1).svg" alt="">
+                    </div>
+                    <div class="rounded-[8px] flex justify-between pt-[10px] pr-[12px] pb-[10px] pl-[12px]">
+                        <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0]">EigerX VIP program overview</span>
+                        <img src="assets/images/Frame%20(1).svg" alt="">
+                    </div>
+                    <div class="rounded-[8px] flex justify-between pt-[10px] pr-[12px] pb-[10px] pl-[12px]">
+                        <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0]">Achievements and awards</span>
+                        <img src="assets/images/Frame%20(1).svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-3
+            shadow-[0px_0px_25px_0px_#0000000D] z-[1] relative
+            text-[#0B0B0F]
+            rounded-[8px] bg-[#0B0B0F]">
+
+            <!-- Home Item -->
+            <div class="flex flex-col items-center gap-[8px] pt-[14px] pb-[14px] group active cursor-pointer">
+                <img src="assets/images/home.svg" alt="">
+                <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0] text-[#F5F5F5] group-hover:text-[#24FFBC] group-[.active]:text-[#24FFBC]">
+            Home
+        </span>
+            </div>
+
+            <!-- Message Item -->
+            <div class="flex flex-col items-center gap-[8px] pt-[14px] pb-[14px] group cursor-pointer">
+                <img src="assets/images/message.svg" alt="">
+                <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0] text-[#F5F5F5] group-hover:text-[#24FFBC] group-[.active]:text-[#24FFBC]">
+            Message
+        </span>
+            </div>
+
+            <!-- Help Item -->
+            <div class="flex flex-col items-center gap-[8px] pt-[14px] pb-[14px] group cursor-pointer">
+                <img src="assets/images/help.svg" alt="">
+                <span class="font-inter font-normal text-[14px] leading-[21px] tracking-[0] text-[#F5F5F5] group-hover:text-[#24FFBC] group-[.active]:text-[#24FFBC]">
+            Help
+        </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
